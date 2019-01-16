@@ -1,17 +1,15 @@
 # Introducción al testing con JavaScript
 
-<!-- TOC START min:2 max:2 link:true update:true -->
+<!-- TOC depthFrom:4 depthTo:4 -->
 
-- [Introducción](#introduccin)
-- [¿Para qué sirve lo que vamos a ver en esta sesión?](#para-qu-sirve-lo-que-vamos-a-ver-en-esta-sesin)
-- [¿En qué casos se utiliza?](#en-qu-casos-se-utiliza)
-- [Testing](#testing)
-- [Testing en JavaScript](#testing-en-javascript)
-- [Introducción a TDD](#introduccin-a-tdd)
-- [Katas y ejercicios](#katas-y-ejercicios)
-- [Recursos externos](#recursos-externos)
+- [EJERCICIO 1](#ejercicio-1)
+- [EJERCICIO 2:](#ejercicio-2)
+- [EJERCICIO 3](#ejercicio-3)
+- [EJERCICIO 4](#ejercicio-4)
+- [EJERCICIO 5](#ejercicio-5)
+- [EJERCICIO 6](#ejercicio-6)
 
-<!-- TOC END -->
+<!-- /TOC -->
 
 ## Introducción
 
@@ -108,7 +106,9 @@ Para instalar Jest en nuestro proyecto lo hacemos usando `npm`. Para eso, tenemo
 
 ---
 
-#### EJERCICIO 1: Instalación de Jest
+#### EJERCICIO 1
+
+**Instalación de Jest**
 
 En primer lugar vamos a crear un proyecto nuevo. En nuestro ordenador creamos una carpeta `intro-testing` y nos movemos a ella desde la terminal. Después tenemos que ejecutar estos comandos:
 
@@ -228,7 +228,9 @@ Partiendo del código del ejercicio 1, vamos a:
 
 ---
 
-#### EJERCICIO 3: Kata Padding
+#### EJERCICIO 3
+
+**Kata Padding**
 
 A los ejercicios de programación que se usan para practicar testing muchas veces se les llama katas. Esta kata consiste en crear una función `padding-left` que se encarga de meter caracteres de relleno en un cadena por el lado izquierdo hasta llegar a un tamaño deseado. Toma 3 parámetros
 
@@ -252,7 +254,9 @@ En primer lugar, desarrollad el código de la función `padding-left` en un fich
 
 ---
 
-#### EJERCICIO 4: ES6 katas
+#### EJERCICIO 4
+
+**ES6 katas**
 
 La web http://es6katas.org/ nos da una series de katas para repasar nuestros conocimientos de JavaScript, en concreto, de las novedades que trajo la versión ES6.
 
@@ -339,7 +343,9 @@ Algunas indicaciones a la hora de practicar TDD:
 
 ---
 
-#### EJERCICIO 5: Kata Fizzbuzz
+#### EJERCICIO 5
+
+**Kata Fizzbuzz**
 
 Usando TDD, desarrollamos una función Fizzbuzz que toma como parámetro un número y devuelve
 
@@ -367,7 +373,7 @@ Esta parte de refactorización requeriría todo un curso en sí misma. Pero lo q
 
 #### EJERCICIO 6
 
-Para comporbar que se refactoriza mucho mejor con tests, os pasamos un ejercicio que ya tiene tests pero un código malísimo. Nuestro objetivo es mejorar el código que nos dan sin modificar el comportamiento (refactorizar) y que los tests sigan pasando. Se trata de la famosa [kata _Gilded Rose_ con JavaScript](https://github.com/gootyfer/gilded-rose-js-with-tests).
+Para comprobar que se refactoriza mucho mejor con tests, os pasamos un ejercicio que ya tiene tests pero un código malísimo. Nuestro objetivo es mejorar el código que nos dan sin modificar el comportamiento (refactorizar) y que los tests sigan pasando. Se trata de la famosa [kata _Gilded Rose_ con JavaScript](https://github.com/gootyfer/gilded-rose-js-with-tests).
 
 ---
 
