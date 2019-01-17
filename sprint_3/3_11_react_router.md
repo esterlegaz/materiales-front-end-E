@@ -9,12 +9,12 @@
 
 ## Contenidos
 
-- [Introducción](#introducción)
-- [¿Para qué sirve lo que vamos a ver en esta sesión?](#¿para-qué-sirve-lo-que-vamos-a-ver-en-esta-sesión)
-- [Qué es React Router](#qué-es-react-router)
-- [Uso básico del router para navegar entre pantallas de nuestra SPA](#uso-básico-del-router-para-navegar-entre-pantallas-de-nuestra-spa)
-- [Usando parámetros en las rutas](#usando-parámetros-en-las-rutas)
-- [Gestión avanzada de rutas](#gestión-avanzada-de-rutas)
+<!-- TOC -->
+
+- [EJERCICIO 1](#ejercicio-1)
+- [EJERCICIO 2](#ejercicio-2)
+
+<!-- /TOC -->
 
 ## Introducción
 
@@ -130,7 +130,9 @@ class App extends React.Component {
 
 ---
 
-**EJERCICIO 1: Me gustan tus pestañas**
+#### EJERCICIO 1
+
+**Me gustan tus pestañas**
 
 Vamos a crear una web con 3 pestañas: 'home', 'pricing' y 'about'. Para eso, lo primero vamos a crear un nuevo proyecto con `create-react-app`.
 
@@ -237,7 +239,9 @@ Un ejemplo de como hacer esto lo tenemos en [este codepen](https://codepen.io/ad
 
 ---
 
-**EJERCICIO 2: Directorio con detalle**
+#### EJERCICIO 2
+
+**Directorio con detalle**
 
 Vamos a partir del ejercicio de la sesión anterior sobre un directorio de personas. En la página principal aparecía un listado de personas con información de https://randomuser.me/. Ahora vamos a hacer un enlace por cada persona de la lista para acceder a una vista de detalle de esa persona. Implementaremos la vista de detalle con un nuevo componente `PersonDetail` al que navegaremos usando React router con una ruta por cada persona de la lista. **¡A por ello!**
 
