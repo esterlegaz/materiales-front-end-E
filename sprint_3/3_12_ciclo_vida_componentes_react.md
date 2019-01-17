@@ -7,16 +7,13 @@
 
 ## Contenidos
 
-- [Introducción](#introducción)
-- [¿Para qué sirve lo que vamos a ver en esta sesión?](#¿para-qué-sirve-lo-que-vamos-a-ver-en-esta-sesión)
-- [¿Qué son los métodos del ciclo de vida?](#¿qué-son-los-métodos-del-ciclo-de-vida)
-- [Ciclo de vida: montaje de un componente](#ciclo-de-vida-montaje-de-un-componente)
-- [Ciclo de vida: desmontaje de un componente](#ciclo-de-vida-desmontaje-de-un-componente)
-- [Ciclo de vida: actualización de un componente](#ciclo-de-vida-actualización-de-un-componente)
-  - [Actualización: llegan nuevas `props`](#actualización-llegan-nuevas-props)
-  - [Actualización: el componente se va a actualizar](#actualización-el-componente-se-va-a-actualizar)
-  - [Actualización: evitar re-renderizar un componente](#actualización-evitar-rerenderizar-un-componente)
-- [Ejemplos de cómo usarlos](#ejemplos-de-cómo-usarlos)
+
+<!-- TOC -->
+
+- [EJERCICIO 1](#ejercicio-1)
+- [EJERCICIO 2](#ejercicio-2)
+
+<!-- /TOC -->
 
 ## Introducción
 
@@ -226,7 +223,9 @@ class AppRoot extends React.Component {
 
 ---
 
-**EJERCICIO 1: La hora con ciclo de vida**
+#### EJERCICIO 1
+
+**La hora con ciclo de vida**
 
 Vamos a partir del componente `Clock` del ejercicio 1 de la sesión 3.7 sobre el estado. Y vamos a usar métodos del ciclo de vida para estructurar mejor el código.
 
@@ -234,7 +233,9 @@ Vamos a partir del componente `Clock` del ejercicio 1 de la sesión 3.7 sobre el
 
 ---
 
-**EJERCICIO 2: El menú dinámico**
+#### EJERCICIO 2
+
+**El menú dinámico**
 
 Vamos a crear un menú de opciones dinámico, es decir, que las opciones vienen de hacer una petición a un servidor. Vamos a ver paso por paso cómo hacerlo:
 
