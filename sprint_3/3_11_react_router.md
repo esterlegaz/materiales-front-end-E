@@ -9,12 +9,7 @@
 
 ## Contenidos
 
-<!-- TOC -->
-
-- [EJERCICIO 1](#ejercicio-1)
-- [EJERCICIO 2](#ejercicio-2)
-
-<!-- /TOC -->
+<!-- TOC -->autoauto- [El router de React](#el-router-de-react)auto  - [Contenidos](#contenidos)auto  - [Introducción](#introducción)auto  - [¿Para qué sirve lo que vamos a ver en esta sesión?](#¿para-qué-sirve-lo-que-vamos-a-ver-en-esta-sesión)auto  - [Qué es React Router](#qué-es-react-router)auto  - [Uso básico del router para navegar entre pantallas de nuestra SPA](#uso-básico-del-router-para-navegar-entre-pantallas-de-nuestra-spa)auto      - [EJERCICIO 1](#ejercicio-1)auto  - [Usando parámetros en las rutas](#usando-parámetros-en-las-rutas)auto  - [Gestión avanzada de rutas: uso de render](#gestión-avanzada-de-rutas-uso-de-render)auto      - [EJERCICIO 2](#ejercicio-2)auto  - [Gestión avanzada de rutas: uso de children](#gestión-avanzada-de-rutas-uso-de-children)auto  - [Recursos externos](#recursos-externos)auto    - [Blog de Paul Sherman](#blog-de-paul-sherman)auto    - [Blog de Krasimir Tsonev](#blog-de-krasimir-tsonev)auto    - [Documentación de React Router](#documentación-de-react-router)autoauto<!-- /TOC -->
 
 ## Introducción
 
@@ -210,6 +205,11 @@ Los componentes `Route` aceptan distintas `props`. En las secciones anteriores h
 ```js
 // ...
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.babyEmoji = '👶';
+  }
   // ...
   render() {
     return (
@@ -219,9 +219,9 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route
-              path="/about"
-              render={() => (
-                <About objective="showing how React Router works" />
+              path="/child/:id"
+              render={props => (
+                <Child match={props.match} babyemoji={this.babyEmoji} />
               )}
             />
           </Switch>
@@ -278,7 +278,7 @@ function renderLinkAndHightlightActive(route, text) {
 
 [&blacktriangleright; Menú consciente de la ruta actual en Codepen][codepen-react-router-active-nav]
 
-En este ejemplo vemos que se usa `Route` de 2 formas: con `children` para pintar en enlace, y luego con `render` para pintar el contenido.
+En este ejemplo vemos que se usa `Route` de 2 formas: con `children` para pintar el enlace con un estilo especial, y luego con `render` para pintar el contenido.
 
 ## Recursos externos
 
